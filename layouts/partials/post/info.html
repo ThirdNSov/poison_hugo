@@ -1,8 +1,7 @@
 <div class="info">
-  <h1 class="post-title">
+  <h3 class="post-title">
     <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h1>
-
+  </h3>
   <div class="headline">
     <div>
       {{ if .Date }}
@@ -21,7 +20,9 @@
         <span>{{ .ReadingTime }} {{ .Scratch.Get "readingTime" }} read</span>
       </span> -->
     </div>
-
+  </div>
+  
+  <div class="headline">
     {{ if .Params.tags }}
     <ul class="tags">
       {{ range .Params.tags }}
@@ -32,6 +33,7 @@
     </ul>
     {{ end }}
   </div>
+  
 
   {{ $Site := .Site }}
   {{ if .Params.series }}

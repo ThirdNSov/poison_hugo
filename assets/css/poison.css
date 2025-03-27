@@ -153,9 +153,14 @@ body > .wrapper {
     margin-top: 1em;
 }
 .post-date {
-    display: inline-block;
+    display: inline;
+    padding-left: 0.5em;
     color: var(--date-color);
 }
+.time-container {
+    text-align: right; /* 부모 컨테이너에서 우측 정렬 */
+}
+
 .info span {
     display: inline-block;
 }
